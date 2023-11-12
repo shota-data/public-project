@@ -1,0 +1,10 @@
+ in:
+  {% include 'db/input_file' %}
+  table: テーブル名
+  select: "*"
+out: 
+  {% include 'db/out_bigquery' %}
+  {% include 'db/out_bq_options'%} 
+  {% include 'db/out_bq_file' %}
+  table: テーブル名
+  source_format: NEWLINE_DELIMITED_JSON
