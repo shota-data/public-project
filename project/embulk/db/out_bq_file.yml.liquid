@@ -1,0 +1,12 @@
+#
+ mode:append
+ gcs_bucket:
+ source_format: CSV
+ field_delimiter: ","
+ allow_quoted_newlines: true
+ time_partitioning:
+   type:day
+   field:date
+retries:3
+-- 参考
+-- https://qiita.com/hiroysato/items/a71669d3e5be2049c238
